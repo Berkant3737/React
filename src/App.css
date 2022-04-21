@@ -1,38 +1,422 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    width: 100%;
+    background-color: rgb(252, 252, 254);
+    padding: 0px 30px 0px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand {
+    color: rgb(30, 30, 39);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+    color: rgb(30, 30, 39);
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link {
+    color: rgb(30, 30, 39);
+}
+
+a.nav-link.btn1 {
+    width: 115px;
+    height: 50px;
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(188, 209, 229);
+}
+
+a.nav-link.btn2 {
+    width: 115px;
+    height: 50px;
+    color: white;
+    background-color: rgb(255, 153, 0);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 35;
+}
+
+
+/* Navbar*/
+
+#hero {
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        margin: 0px;
+    }
+}
+
+#hero h1 {
+    font-size: 46px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+#hero .btn {
+    color: white;
+    width: 175px;
+    height: 56px;
+    line-height: 50px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+/* FEATURES */
+
+#features {
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #features {
+        margin: 0px;
+    }
+}
+
+#features h1 {
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 50px;
+}
+
+#features h4 {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#features p {
+    color: rgb(84, 72, 55);
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+#features img {
+    width: 75px;
+    margin-left: -16px;
+}
+
+#features .btn {
+    width: 160px;
+    height: 50px;
+    color: white;
+    background-color: rgb(255, 153, 0);
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+
+/* VALİDATİON */
+
+#validation {
+    padding: 60px 0px 60px 0px;
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #validation {
+        margin: 0px;
+    }
+}
+
+#validation h2 {
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#validation h4 {
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#validation h5 {
+    font-size: 18px;
+}
+
+#validation p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+
+/* MANAGER */
+
+#manager {
+    padding: 60px 0px 60px 0px;
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #manager {
+        margin: 0px;
+    }
+}
+
+#manager h2 {
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#manager h4 {
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#manager h5 {
+    font-size: 18px;
+}
+
+#manager p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+
+/* MARKETER */
+
+#marketer {
+    padding: 60px 0px 60px 0px;
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #marketer {
+        margin: 0px;
+    }
+}
+
+#marketer h2 {
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#marketer h4 {
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#marketer h5 {
+    font-size: 18px;
+}
+
+#marketer p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+
+/* NEED */
+
+#need {
+    padding: 60px 0px 60px 0px;
+    background-image: url('https://technext.github.io/productly/v1.0.0/assets/img/superhero/oval.png');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    #need {
+        background-image: none;
+    }
+}
+
+#need h1 {
+    font-size: 40px;
+}
+
+#need p {
+    color: rgb(86, 117, 146);
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+#need .btn {
+    width: 204px;
+    height: 50px;
+    color: white;
+    background-color: rgb(255, 153, 0);
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+
+/* MARKETİNG */
+
+#marketing {
+    padding: 60px 0px 60px 0px;
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #marketing {
+        margin: 0px;
+    }
+}
+
+#marketing h1 {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+#marketing p {
+    font-size: 16px;
+}
+
+#marketing .card-title {
+    font-family: Poppins, sans-serif;
+}
+
+#marketing .card-title a {
+    color: rgb(33, 37, 41);
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#marketing .card-title a:hover {
+    color: orange;
+}
+
+#marketing .card-text {
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 60px 0px 0px 0px;
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin: 0px;
+    }
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer ul li {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+footer ul li a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer .form {
+    width: 250px;
+    height: 50px;
+}
+
+footer input::placeholder {
+    color: rgb(47, 40, 30);
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+}
+
+footer .btn {
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: rgb(255, 153, 0);
+    line-height: 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+/* FOOTER FİNİSH */
+
+#footer-finish {
+    margin: 0px 140px 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #footer-finish {
+        margin: 0px;
+    }
+}
+
+#footer-finish p {
+    color: rgb(47, 40, 30);
+    font-size: 16px;
+    font-weight: 400;
 }
